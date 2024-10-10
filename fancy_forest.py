@@ -188,7 +188,7 @@ def draw_forest(num_trees,day = True):
         draw_tree(x,y,l,t)
 
 def window_dimensions():
-
+    # these are the dimensions
     h = window_height()
     w = window_width()
     
