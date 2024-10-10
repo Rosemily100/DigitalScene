@@ -16,6 +16,6 @@ def draw_shape(side_length,num_sides):
     end_fill()
 
 
-draw_shape(150,8)
+draw_shape(150,3)
 
 done()
