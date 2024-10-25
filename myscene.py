@@ -110,7 +110,12 @@ def draw_forest():
         draw_tree(x,y,l,t)
 
 speed(13)
-#sky()
+sky()
 draw_forest()
+
+def star():
+    
+    
+    
 done()
 
