@@ -109,12 +109,28 @@ def draw_forest():
         t = randrange(2,5)
         draw_tree(x,y,l,t)
 
+def star():
+    pendown()
+    for i in range(8):
+        l =randrange(10,40)
+        fd(l)
+        bk(l)
+        rt(45)
+    penup()
+
+def stars(num):
+    pencolor("white")
+    for i in range(num):
+        penup()
+        goto(randrange(-500,500),randrange(0,400))
+        star()
+
+
+
 speed(13)
 sky()
-draw_forest()
-
-def star():
-    
+stars(20)
+#draw_forest()
     
     
 done()
