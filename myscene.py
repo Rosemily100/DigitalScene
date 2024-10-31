@@ -125,13 +125,27 @@ def stars(num):
         goto(randrange(-500,500),randrange(0,400))
         star()
 
-
-
+def moon():
+    penup()
+    color('white')
+    goto(230,230)
+    dot(150)
+    penup()
+    color('gray')
+    goto(200,250)
+    dot(35)
+    penup()
+    goto(260,250)
+    dot(50)
+    penup()
+    goto(230,200)
+    dot(25)
+    
 speed(13)
 sky()
 stars(20)
-#draw_forest()
-    
+draw_forest()
+moon()
     
 done()
 
