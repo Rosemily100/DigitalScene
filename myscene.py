@@ -99,15 +99,33 @@ def draw_tree(x,y,side_length,num_tri):
 
 
 def draw_forest():
-    num_trees = 20
     w = window_width()
     h = window_height()
-    for i in range(num_trees):
+    for i in range(20):
         x = randrange(-400,400)
-        y = randrange(-400,0)
-        l = randrange(5,15)
+        y = randrange(-200,0)
+        l = 5
         t = randrange(2,5)
         draw_tree(x,y,l,t)
+    for i in range(10):
+        x = randrange(-400,400)
+        y = randrange(-400,-200)
+        l = 20
+        t = randrange(2,5)
+        draw_tree(x,y,l,t)
+
+def grass():
+    colormode(255)
+    for i in range(400):
+        pencolor(0,randrange(150,255),0)
+        penup()
+        goto(randrange(-500,500),-400)
+        pendown()
+        setheading(90)
+        l = randrange(80,120)
+        fd(l)
+        bk(l)
+        
 
 def star():
     pendown()
@@ -142,8 +160,9 @@ def moon():
     dot(25)
     
 speed(13)
-sky()
-stars(20)
+#sky()
+#stars(20)
+grass()
 draw_forest()
 moon()
     
