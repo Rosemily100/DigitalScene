@@ -103,7 +103,7 @@ def draw_forest():
     h = window_height()
     for i in range(20):
         x = randrange(-400,400)
-        y = randrange(-200,0)
+        y = randrange(-200,-50)
         l = 5
         t = randrange(2,5)
         draw_tree(x,y,l,t)
@@ -160,10 +160,10 @@ def moon():
     dot(25)
     
 speed(13)
-#sky()
-#stars(20)
-grass()
+sky()
+stars(20)
 draw_forest()
+grass()
 moon()
     
 done()
